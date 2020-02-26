@@ -503,76 +503,7 @@ so that you and other people can put those programs into pipes to multiply their
 
 > ## Pipe Construction
 >
-> For the file `animals.txt` from the previous exercise, consider the following command:
->
-> ~~~
-> $ cut -d , -f 2 animals.txt
-> ~~~
-> {: .language-bash}
->
-> The `cut` command is used to remove or 'cut out' certain sections of each line in the file,
-> and `cut` expects the lines to be separated into columns by a <kbd>Tab</kbd> character.
-> A character used in this way is a called a **delimiter**.
-> In the example above we use the `-d` option to specify the comma as our delimiter character.
-> We have also used the `-f` option to specify that we want to extract the second field (column).
-> This gives the following output:
->
-> ~~~
-> deer
-> rabbit
-> raccoon
-> rabbit
-> deer
-> fox
-> rabbit
-> bear
-> ~~~
-> {: .output}
->
-> The `uniq` command filters out adjacent matching lines in a file.
-> How could you extend this pipeline (using `uniq` and another command) to find
-> out what animals the file contains (without any duplicates in their
-> names)?
->
-> > ## Solution
-> > ```
-> > $ cut -d , -f 2 animals.txt | sort | uniq
-> > ```
-> > {: .language-bash}
-> {: .solution}
-{: .challenge}
-
-> ## Which Pipe?
->
-> The file `animals.txt` contains 8 lines of data formatted as follows:
->
-> ~~~
-> 2012-11-05,deer
-> 2012-11-05,rabbit
-> 2012-11-05,raccoon
-> 2012-11-06,rabbit
-> ...
-> ~~~
-> {: .output}
->
-> The `uniq` command has a `-c` option which gives a count of the
-> number of times a line occurs in its input.  Assuming your current
-> directory is `data-shell/data/`, what command would you use to produce
-> a table that shows the total count of each type of animal in the file?
->
-> 1.  `sort animals.txt | uniq -c`
-> 2.  `sort -t, -k2,2 animals.txt | uniq -c`
-> 3.  `cut -d, -f 2 animals.txt | uniq -c`
-> 4.  `cut -d, -f 2 animals.txt | sort | uniq -c`
-> 5.  `cut -d, -f 2 animals.txt | sort | uniq -c | wc -l`
->
-> > ## Solution
-> > Option 4. is the correct answer.
-> > If you have difficulty understanding why, try running the commands, or sub-sections of
-> > the pipelines (make sure you are in the `data-shell/data` directory).
-> {: .solution}
-{: .challenge}
-
+> 
 ## Nelle's Pipeline: Checking Files
 
 Nelle has run her samples through the assay machines
