@@ -20,15 +20,14 @@ automating repetitive tasks, and its capacity to access networked machines."
 - "The shell's main disadvantages are its primarily textual nature and how
 cryptic its commands and operation can be."
 ---
+
 ### Background
 
 Humans and computers commonly interact in many different ways, such as through a keyboard and mouse, touch screen interfaces, or using speech recognition systems. The most widely used way to interact with personal computers is called a **graphical user interface** (GUI).
-With a GUI, we give instructions by clicking a mouse and using menu-driven interactions.
+With a __GUI__
 
 While the visual aid of a GUI makes it intuitive to learn, this way of delivering instructions to a computer scales very poorly.
-Imagine the following task:
-for a literature search, you have to copy the third line of one thousand text files in one thousand different directories and paste it into a single file.
-Using a GUI, you would not only be clicking at your desk for several hours, but you could potentially also commit an error in the process of completing this repetitive task. This is where we take advantage of the Unix shell.
+
 The Unix shell is both a **command-line interface** (CLI) and a scripting language, allowing such repetitive tasks to be done automatically and fast.
 With the proper commands, the shell can repeat tasks with or without some modification as many times as we want.
 Using the shell, the task in the literature example can be accomplished in seconds.
@@ -52,10 +51,8 @@ workflows.
 In addition, the command line is often the easiest way to interact with remote machines and supercomputers.
 Familiarity with the shell is near essential to run a variety of specialized tools and resources
 including high-performance computing systems.
-As clusters and cloud computing systems become more popular for scientific data crunching,
-being able to interact with the shell is becoming a necessary skill.
-We can build on the command-line skills covered here
-to tackle a wide range of scientific questions and computational challenges.
+
+
 
 Let's get started.
 
