@@ -103,9 +103,7 @@ creatures/  data/  molecules/  north-pacific-gyre/  notes.txt  pizza.cfg  solar.
 > 3. Stick with letters, numbers, `.` (period or 'full stop'), `-` (dash) and `_` (underscore).
 >
 >    Many other characters have special meanings on the command line.
->    We will learn about some of these during this lesson.
->    There are special characters that can cause your command to not work as
->    expected and can even result in data loss.
+>    
 >
 > If you need to refer to names of files or directories that have spaces
 > or other special characters, you should surround the name in quotes (`""`).
@@ -132,25 +130,7 @@ $ nano draft.txt
 >
 > When we say, '`nano` is a text editor'" we really do mean 'text': it can
 > only work with plain character data, not tables, images, or any other
-> human-friendly media. We use it in examples because it is one of the
-> least complex text editors. However, because of this trait, it may
-> not be powerful enough or flexible enough for the work you need to do
-> after this workshop. On Unix systems (such as Linux and macOS),
-> many programmers use [Emacs](http://www.gnu.org/software/emacs/) or
-> [Vim](http://www.vim.org/) (both of which require more time to learn),
-> or a graphical editor such as
-> [Gedit](http://projects.gnome.org/gedit/). On Windows, you may wish to
-> use [Notepad++](http://notepad-plus-plus.org/).  Windows also has a built-in
-> editor called `notepad` that can be run from the command line in the same
-> way as `nano` for the purposes of this lesson.
->
-> No matter what editor you use, you will need to know where it searches
-> for and saves files. If you start it from the shell, it will (probably)
-> use your current working directory as its default location. If you use
-> your computer's start menu, it may want to save files in your desktop or
-> documents directory instead. You can change this by navigating to
-> another directory the first time you 'Save As...'
-{: .callout}
+> human-friendly media. 
 
 Let's type in a few lines of text.
 Once we're happy with our text, we can press <kbd>Ctrl</kbd>+<kbd>O</kbd>
@@ -242,20 +222,9 @@ draft.txt
 > almost anything else we want. However, most people use two-part names
 > most of the time to help them (and their programs) tell different kinds
 > of files apart. The second part of such a name is called the
-> **filename extension**, and indicates
-> what type of data the file holds: `.txt` signals a plain text file, `.pdf`
-> indicates a PDF document, `.cfg` is a configuration file full of parameters
-> for some program or other, `.png` is a PNG image, and so on.
+> **filename extension**, 
 >
-> This is just a convention, albeit an important one. Files contain
-> bytes: it's up to us and our programs to interpret those bytes
-> according to the rules for plain text files, PDF documents, configuration
-> files, images, and so on.
 >
-> Naming a PNG image of a whale as `whale.mp3` doesn't somehow
-> magically turn it into a recording of whalesong, though it *might*
-> cause the operating system to try to open it with a music player
-> when someone double-clicks it.
 {: .callout}
 
 ## Moving files and directories

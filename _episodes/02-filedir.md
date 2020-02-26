@@ -40,7 +40,7 @@ First let's find out where we are by running a command called `pwd`
 (which stands for 'print working directory'). Directories are like *places* - at any time
 while we are using the shell we are in exactly one place, called
 our **current working directory**. Commands mostly read and write files in the
-current working directory, i.e. 'here', so knowing where you are before running
+current working directory, i.e. __'here'__, so knowing where you are before running
 a command is important. `pwd` shows you where you are:
 
 ~~~
@@ -635,19 +635,7 @@ equivalent to `ls -Fa`.
 > is used.
 {: .callout}
 
-> ## Orthogonality
 >
-> The special names `.` and `..` don't belong to `cd`;
-> they are interpreted the same way by every program.
-> For example,
-> if we are in `/Users/nelle/data`,
-> the command `ls ..` will give us a listing of `/Users/nelle`.
-> When the meanings of the parts are the same no matter how they're combined,
-> programmers say they are **orthogonal**:
-> Orthogonal systems tend to be easier for people to learn
-> because there are fewer special cases and exceptions to keep track of.
-{: .callout}
-
 These then, are the basic commands for navigating the filesystem on your computer:
 `pwd`, `ls` and `cd`.  Let's explore some variations on those commands.  What happens
 if you type `cd` on its own, without giving
